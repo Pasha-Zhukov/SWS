@@ -1,0 +1,50 @@
+import React, { useState } from "react";
+
+import "./SideMenu.style.scss";
+
+interface SideMenuProps {
+  items: string[];
+}
+
+const SideMenu: React.FC<SideMenuProps> = ({ items }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleItemClick = (index: number) => {
+    setActiveIndex(index);
+  };
+
+  return (
+    <div className="side-menu">
+      {items.map((item, index) => (
+        <div
+          key={index}
+          onClick={() => handleItemClick(index)}
+          className={`menu-item ${index === activeIndex ? "active" : ""}`}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+          >
+            <g clipPath="url(#clip0_30533_11)">
+              <path
+                d="M2.75 11.9167H10.0833V2.75H2.75V11.9167ZM2.75 19.25H10.0833V13.75H2.75V19.25ZM11.9167 19.25H19.25V10.0833H11.9167V19.25ZM11.9167 2.75V8.25H19.25V2.75H11.9167Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_30533_11">
+                <rect width="22" height="22" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>{" "}
+          {item}
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default SideMenu;
