@@ -13,9 +13,11 @@ export const MainContent = () => {
     setAllData(data);
   }, [data]);
   return (
-    <>
+    <div className="wrapper-main">
       {isFetching ? (
-        <div className="loading">Loading...</div>
+        <div className="loading">
+          <div>Loading...</div>
+        </div>
       ) : (
         <div className="list-expenses">
           <div className="list-expenses-item">Уровень</div>
@@ -35,6 +37,6 @@ export const MainContent = () => {
           ))}
         </div>
       )}
-    </>
+    </div>
   );
 };

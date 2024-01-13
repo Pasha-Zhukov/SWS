@@ -1,7 +1,7 @@
-import SideMenu from "./SideMenu/SideMenu";
+import SideMenu from "./components/SideMenu/SideMenu";
 
-import { Menu } from "./menu/Menu";
-import { SubMenu } from "./subMenu/SubMenu";
+import { Menu } from "./components/menu/Menu";
+import { SubMenu } from "./components/subMenu/SubMenu";
 import { MainContent } from "./mainContent/MainContent";
 
 import "./App.css";

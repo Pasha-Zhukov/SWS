@@ -6,8 +6,8 @@ import {
   useUpdateRowMutation,
 } from "../api";
 import createRowLocal from "../utils/createRowLocal";
-import { ChildMainContentButtonGroup } from "../components/ChildMainContentButtonGroup/ChildMainContentButtonGroup";
-import { ChildMainContentItem } from "../components/ChildMainContentItem/ChildMainContentItem";
+import { ChildMainContentButtonGroup } from "../components/childMainContentButtonGroup/ChildMainContentButtonGroup";
+import { ChildMainContentItem } from "../components/childMainContentItem/ChildMainContentItem";
 import { item } from "../shared/interfaces/item.interface";
 
 interface ChildMainContentProps {

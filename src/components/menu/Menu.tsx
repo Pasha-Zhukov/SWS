@@ -1,5 +1,5 @@
-import Tab from "../components/tab/Tab";
-import Tabs from "../components/tabs/Tabs";
+import Tab from "../tab/Tab";
+import Tabs from "../tabs/Tabs";
 
 import "./Menu.style.scss";
 
